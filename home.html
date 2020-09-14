@@ -17,10 +17,18 @@
             return results[1] || undefined;
         }
 
-        console.log('Account Id', getQueryParam('id'));
 
         window._vwo_code = window._vwo_code || (function(){
-            var account_id= getQueryParam('id') || 1,
+            const accountId = getQueryParam('id');
+
+            if (!accountId) {
+                console.log('Account Id not found');
+                return;
+            }else{
+                console.log('Account Id found', getQueryParam('id'));
+            }
+
+            var account_id= accountId,
                 settings_tolerance=2000,
                 library_tolerance=2500,
                 use_existing_jquery=false,
