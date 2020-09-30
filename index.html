@@ -17,43 +17,114 @@
             return results[1] || undefined;
         }
 
-
-        window._vwo_code = window._vwo_code || (function(){
+        window._vwo_code = window._vwo_code || (function () {
             const accountId = getQueryParam('id');
 
             if (!accountId) {
                 console.log('Account Id not found');
                 return;
-            }else{
+            } else {
                 console.log('Account Id found', getQueryParam('id'));
             }
 
-            var account_id= accountId,
-                settings_tolerance=2000,
-                library_tolerance=2500,
-                use_existing_jquery=false,
-                is_spa=1,
-                hide_element='body',
+            var account_id = accountId,
+                settings_tolerance = 2000,
+                library_tolerance = 2500,
+                use_existing_jquery = false,
+                is_spa = 1,
+                hide_element = 'body',
 
                 /* DO NOT EDIT BELOW THIS LINE */
-                f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
-                        window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
+                f = false, d = document, code = {
+                    use_existing_jquery: function () {
+                        return use_existing_jquery;
+                    }, library_tolerance: function () {
+                        return library_tolerance;
+                    }, finish: function () {
+                        if (!f) {
+                            f = true;
+                            var a = d.getElementById('_vis_opt_path_hides');
+                            if (a) a.parentNode.removeChild(a);
+                        }
+                    }, finished: function () {
+                        return f;
+                    }, load: function (a) {
+                        var b = d.createElement('script');
+                        b.src = a;
+                        b.type = 'text/javascript';
+                        b.innerText;
+                        b.onerror = function () {
+                            _vwo_code.finish();
+                        };
+                        d.getElementsByTagName('head')[0].appendChild(b);
+                    }, init: function () {
+                        window.settings_timer = setTimeout('_vwo_code.finish()', settings_tolerance);
+                        var a = d.createElement('style'),
+                            b = hide_element ? hide_element + '{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}' : '',
+                            h = d.getElementsByTagName('head')[0];
+                        a.setAttribute('id', '_vis_opt_path_hides');
+                        a.setAttribute('type', 'text/css');
+                        if (a.styleSheet) a.styleSheet.cssText = b; else a.appendChild(d.createTextNode(b));
+                        h.appendChild(a);
+                        this.load('https://dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&f=' + (+is_spa) + '&r=' + Math.random());
+                        return settings_timer;
+                    }
+                };
+            window._vwo_settings_timer = code.init();
+            return code;
+        }());
     </script>
     <!-- End VWO Async SmartCode -->
 </head>
 <body>
-<div class="m-2">
-    <h1>Shubham Personal Website</h1>
-</div>
-<div class="m-2 d-flex justify-content-center border border-primary">
-    <div class="m-4 p-4">
-        <img src="https://static.wingify.com/gcp/wp-content/themes/vwo/images/new-website/brand-logos/norwegian.svg">
+<div class="m-3">
+    <div class="m-2  mb-5">
+        <h1>Shubham Personal Website</h1>
     </div>
-    <div class="m-4 p-4">
-        <img src="https://static.wingify.com/gcp/wp-content/themes/vwo/images/new-website/brand-logos/norwegian.svg">
+    <div class="m-2 mb-5 d-flex justify-content-center border border-primary">
+        <div class="m-4 p-4">
+            <img src="https://static.wingify.com/gcp/wp-content/themes/vwo/images/new-website/brand-logos/norwegian.svg">
+        </div>
+        <div class="m-4 p-4">
+            <img src="https://static.wingify.com/gcp/wp-content/themes/vwo/images/new-website/brand-logos/norwegian.svg">
+        </div>
+        <div class="m-4 p-4">
+            <img src="https://static.wingify.com/gcp/wp-content/themes/vwo/images/new-website/brand-logos/norwegian.svg">
+        </div>
     </div>
-    <div class="m-4 p-4">
-        <img src="https://static.wingify.com/gcp/wp-content/themes/vwo/images/new-website/brand-logos/norwegian.svg">
+    <div class="mb-2">
+        <h3>What is Lorem Ipsum?</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum</p>
+    </div>
+    <div class="mb-5">
+        <h3>Where does it come from?</h3>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+            literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+            Hampden-Sydney
+            College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
+            and
+            going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
+            comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
+            by
+            Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
+            Renaissance.
+            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+    </div>
+    <div class="mb-5">
+        <h3>Where can I get some?</h3>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some form, by injected humour, or randomised words which don't look even slightly believable. If you are
+            going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+            necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+            words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+            The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
+            words etc.</p>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
