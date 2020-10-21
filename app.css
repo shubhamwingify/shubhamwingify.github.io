@@ -1,3 +1,11 @@
-#content-div-1-p {
+#content-div-1 > p {
     color: red;
+}
+
+#content-div-2 > p {
+    color: green;
+}
+
+#content-div-3 > p {
+    color: dodgerblue;
 }
