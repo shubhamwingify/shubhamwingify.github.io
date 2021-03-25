@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function (){
         attributeOldValue: true,
     });
 
-    setInterval(()=>{
-        const elem = document.getElementById('content-div-3-p');
-        elem.setAttribute('class', 'shubham');
-    }, 1000);
+    // setInterval(()=>{
+    //     const elem = document.getElementById('content-div-3-p');
+    //     elem.setAttribute('class', 'shubham');
+    // }, 1000);
 });
