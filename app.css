@@ -1,7 +1,7 @@
 #content-div-1 > p {
     color: red;
-    width: 150%;
-    overflow:hidden;
+    /*width: 150%;*/
+    /*overflow:hidden;*/
 }
 
 #content-div-2 > p {
