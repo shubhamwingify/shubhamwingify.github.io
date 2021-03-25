@@ -11,3 +11,14 @@
 #content-div-3 > p {
     color: dodgerblue;
 }
+
+.myBtn{
+    width: 100px;
+    transition: width 1s;
+    background: blue;
+}
+
+.myBtn:hover{
+    width: 300px;
+    background-color: green;
+}
