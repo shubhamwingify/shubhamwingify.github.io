@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', function (){
         }
     });
 
-    observer.observe(document.body, {
-        subtree: true,
-        attributes: true,
-        attributeOldValue: true,
-    });
+    // observer.observe(document.body, {
+    //     subtree: true,
+    //     attributes: true,
+    //     attributeOldValue: true,
+    // });
 
     // setInterval(()=>{
     //     const elem = document.getElementById('content-div-3-p');
