@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    window.vwo_document_real_url = null;
+    // window.vwo_document_real_url = null;
 
     // Object.defineProperty(window, 'vwo_document_real_url', {
     //     set: function (value) {
