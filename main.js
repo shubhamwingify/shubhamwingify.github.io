@@ -6,6 +6,14 @@ document.addEventListener('DOMContentLoaded', function (){
         }
     });
 
+
+    Object.defineProperties('vwo_document_real_url', {
+        set: function (value) {
+            debugger;
+            this.vwo_document_real_url = value;
+        }
+    });
+
     // observer.observe(document.body, {
     //     subtree: true,
     //     attributes: true,
