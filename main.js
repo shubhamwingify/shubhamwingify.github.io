@@ -6,13 +6,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    window.vwo_document_real_url = null;
 
-    Object.defineProperty(window, 'vwo_document_real_url', {
-        set: function (value) {
-            debugger;
-            this.vwo_document_real_url = value;
-        }
-    });
+    // Object.defineProperty(window, 'vwo_document_real_url', {
+    //     set: function (value) {
+    //         debugger;
+    //         this.vwo_document_real_url = value;
+    //     }
+    // });
 
     // observer.observe(document.body, {
     //     subtree: true,
