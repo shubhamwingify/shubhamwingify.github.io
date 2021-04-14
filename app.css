@@ -19,6 +19,7 @@
 }
 
 .myBtn:hover{
-    width: 300px;
+    visibility: hidden !important;
     background-color: green;
+    width: 300px;
 }
