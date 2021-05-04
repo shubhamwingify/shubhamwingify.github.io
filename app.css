@@ -14,7 +14,7 @@
 
 .myBtn{
     width: 100px;
-    transition: all 12s ease-out;
+    transition: all 12s linear;
     background: blue;
 }
 
