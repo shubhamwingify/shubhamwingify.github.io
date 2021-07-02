@@ -6,6 +6,17 @@
     <title>Shubham Wingify</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="app.css">
+    <script>
+        if (!originalEventListener) {
+            var originalEventListener = EventTarget.prototype.addEventListener;
+        }
+
+        EventTarget.prototype.addEventListener = function (type, fn, capture) {
+            this.originalEventListener = originalEventListener;
+            this.originalEventListener(type, fn, capture);
+            console.log('Shubham Event Listener', this, type, this.onclick, this instanceof Element);
+        };
+    </script>
     <!-- Start VWO Async SmartCode -->
     <script type='text/javascript'>
         function getQueryParam(name, url) {
