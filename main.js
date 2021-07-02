@@ -12,5 +12,6 @@ jqElem.click(function () {
 
 setTimeout(()=> {
     let event = new Event("click");
-    elem.dispatchEvent(event);
+    const copiedElement = document.getElementById('shubham-btn-new');
+    elem.dispatchEvent.call(copiedElement, event);
 }, 5000);
