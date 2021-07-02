@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const observer = new MutationObserver((mutationRecordList) => {
-        for (const mutationRecord of mutationRecordList) {
-            console.log(mutationRecord.attributeName, ':', mutationRecord.oldValue, '->>', mutationRecord.target.getAttribute(mutationRecord.attributeName));
-        }
-    });
+    // const observer = new MutationObserver((mutationRecordList) => {
+    //     for (const mutationRecord of mutationRecordList) {
+    //         console.log(mutationRecord.attributeName, ':', mutationRecord.oldValue, '->>', mutationRecord.target.getAttribute(mutationRecord.attributeName));
+    //     }
+    // });
 
     // window.vwo_document_real_url = null;
 
