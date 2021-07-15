@@ -7,11 +7,22 @@ elem.addEventListener('click', function (event) {
 const jqElem = $('#shubham-btn');
 jqElem.click(function () {
     console.log('Jquery Click', this);
+    debugger;
 });
 
 
 setTimeout(()=> {
-    let event = new Event("click");
-    const copiedElement = document.getElementById('shubham-btn-new');
-    elem.dispatchEvent.call(copiedElement, event);
-}, 5000);
+    const elementA = document.getElementById('shubham-btn');
+    const event = new Event("click");
+    const elementB = document.getElementById('shubham-btn-new');
+    // Events attached using overridden addEventListeners
+    const handlers = elementA.__vwo_events;
+    for(const handler of handlers){
+        handler.handler.call(elementB, event);
+    }
+
+    // const elementA = document.getElementById('shubham-btn');
+    // const event = new Event("click");
+    // const elementB = document.getElementById('shubham-btn-new');
+    // elementA.dispatchEvent.call(elementB, event);
+}, 4000);
