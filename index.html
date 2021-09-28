@@ -6,23 +6,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="app.css">
 </head>
-<script>
-    window.addEventListener('beforeunload', function (e) {
-        console.log(e);
-        return 'Sure?';
-    });
-</script>
 <body>
 <div class="m-3">
-    <div class="m-2 mb-5 header" id="header-div"><h1>Shubham Personal Website</h1></div>
-    <div class="m-2 mb-5 text-center"><p>Button having addEventListener event </p>
-        <div class="d-flex justify-content-center">
-            <button id="shubham-btn" class="btn btn-primary" onclick="onButtonClick()">Click Me</button>
+    <div class="m-2 mb-5 header" id="header-div"><h1>Personal Website</h1></div>
+    <div class="m-2 p-5 d-flex justify-content-around border border-primary">
+        <div>
+            <p>Video tag with source tags</p>
+            <video width="320" height="240" controls>
+                <source src="assets/video/movie.mp4" type="video/mp4">
+                <source src="assets/video/movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
         </div>
-    </div>
-    <div class="m-2 mb-5 text-center"><p>Button having addEventListener event Copied </p>
-        <div class="d-flex justify-content-center">
-            <button id="shubham-btn-new" class="btn btn-primary" onclick="onButtonClick()">Click Me new</button>
+        <div>
+            <p>Video tag without source tags</p>
+            <video width="320" height="240" controls src="assets/video/movie.mp4"></video>
         </div>
     </div>
     <div class="m-2 d-flex justify-content-center border border-primary" id="images-div">
